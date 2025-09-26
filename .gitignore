@@ -1,0 +1,42 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnp/
+.pnp.js
+.coverage/
+coverage/
+
+# Build / Dist
+dist/
+build/
+.out/
+.next/
+.cache/
+.vite/
+vite.config.ts.timestamp-*
+*.tsbuildinfo
+
+# Env & credenciais
+.env
+.env.*
+!.env.example
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test
+jest-html-reporters-*
+jest-stare/
+playwright-report/
+test-results/
+
+# Misc
+*.log
+*.local

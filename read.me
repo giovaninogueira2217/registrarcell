@@ -1,0 +1,18 @@
+# 1) build do front
+cd front
+npm install
+npm run build
+
+# 2) subir a API 
+cd ..
+npm install --prefix celulares server
+pm2 start ecosystem.config.js
+
+# logs 
+pm2 logs celulares-app
+pm2 save
+pm2 startup
+
+
+#front
+VITE_BASE=/celulares/ VITE_API_BASE=/celulares/api npm run build
